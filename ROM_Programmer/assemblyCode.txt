@@ -1,0 +1,18 @@
+OUT #20
+OUTR #1
+
+HLT
+
+FST
+TRAB
+FST
+
+ADDI
+
+OV #8
+JMP #3
+
+SUBI
+
+EQ #0
+JMP #8
