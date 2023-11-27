@@ -94,7 +94,7 @@ Each op-code corresponds to a specific, hardcoded instruction. The system allows
 - 100_101 - OUTA: Outputs the value from the A register
 - 100_110 - OUTB: Outputs the value from the B register
 
-<strong>Note:</strong> The "specified value" is a value read from the ROM. For instructions using a "specified value," the instruction in the ROM comprises two parts: the op-code and the specified value.
+<strong>Note:</strong> The "specified value" is a value read from the ROM. For instructions using a "specified value," the ROM comprises of two parts: the op-code and the specified value.
 
 
 ## Clock
@@ -137,3 +137,15 @@ It also features three status flags that feed int the control logic ROM chips:
 - Cmp flag: it is A greater than B pin of a second comparator chip
 
 ![image](https://github.com/AndreiBertescu/8-Bit-Computer/assets/126001291/40700316-b757-4099-9ff3-834e0ea2eddf)
+
+## Random Access Memory
+It features a 256-byte RAM chip with a manual programming option. The address and the actual value are run through two demultiplexers that have two separate inputs: one from the instruction register (for the address) or from the bus (for the actual value), or from two 8-bit dip switches. It also features an LED bar for the address and the value. The RAM write signal is ANDed with the clock that has been routed through a filter with the purpose of getting a pulse at the high-going edge.
+
+![image](https://github.com/AndreiBertescu/8-Bit-Computer/assets/126001291/63640384-b309-46f5-b153-16d2f849d367)
+
+## Output
+A four-digit display that shows the value stored in the output register. It works by sending the value to a ROM chip that decodes the binary number to a decimal display. An extra clock was added to rapidly switch from outputting from a digit to the next with the purpose of minimizing the amount of ROM chips used. It also has a switch for toggling signed/unsigned display.
+
+![image](https://github.com/AndreiBertescu/8-Bit-Computer/assets/126001291/39b35543-a934-4aa1-98af-712d6e791a04)
+
+
