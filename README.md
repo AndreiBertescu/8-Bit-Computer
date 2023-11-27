@@ -137,5 +137,3 @@ It also features three status flags that feed int the control logic ROM chips:
 - Cmp flag: it is A greater than B pin of a second comparator chip
 
 ![image](https://github.com/AndreiBertescu/8-Bit-Computer/assets/126001291/40700316-b757-4099-9ff3-834e0ea2eddf)
-
-
