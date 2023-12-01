@@ -103,7 +103,7 @@
     <a name="appearance" val="logisim_evolution"/>
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
-    <a name="simulationFrequency" val="8.0"/>
+    <a name="simulationFrequency" val="2000.0"/>
     <appear>
       <rect fill="none" height="250" stroke="#000000" width="220" x="103" y="50"/>
       <circ-anchor facing="east" x="270" y="60"/>
@@ -683,9 +683,8 @@
     <comp lib="4" loc="(1930,290)" name="ROM">
       <a name="appearance" val="logisim_evolution"/>
       <a name="contents">addr/data: 8 8
-23 14 24 1 0 9 7 9
-12 1c 8 20 3 14 1a 0
-20 8
+9 7 9 12 1c 8 20 3
+14 1a 0 20 8
 </a>
     </comp>
     <comp lib="4" loc="(2350,910)" name="Register">
@@ -1289,7 +1288,7 @@ d0 6*0 50 8 6*0 50 2
       <a name="color" val="#0000ff"/>
       <a name="text" val="Program"/>
     </comp>
-    <comp lib="8" loc="(2010,1649)" name="Text">
+    <comp lib="8" loc="(2010,1645)" name="Text">
       <a name="color" val="#ff0000"/>
       <a name="text" val="HLT, RST, CRST, II, FST, LST, RW, RO --- RI, CO, JMP, CNT, AO, AI, BO, BI --- SUB, ADD, AND, OR, XOR, NOT, SHR, SHL --- FLGW, CMP, CARY, ZERO, OUT, #, #, #"/>
     </comp>

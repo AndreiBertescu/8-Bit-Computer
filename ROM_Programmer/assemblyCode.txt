@@ -1,8 +1,3 @@
-OUT #20
-OUTR #1
-
-HLT
-
 FST
 TRAB
 FST
